@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><!--首页 fragment 界面-->
+<layout xmlns:binding="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="homeModel"
+            type="ganjiang.moye.com.locomotive.viewmodel.fragment.homeViewModel" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/home_banner"
+                    bannerurl="@{homeModel.imags}"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dip">
+
+                </com.youth.banner.Banner>
+            </RelativeLayout>
+             <!-- 广告通告-->
+            <LinearLayout
+                binding:isThrottleFirst="@{Boolean.TRUE}"
+                binding:onClickCommand="@{homeModel.HomeADClick}"
+                android:layout_width="match_parent"
+                android:layout_height="52dip"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dip"
+                    android:src="@drawable/laba" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22.5dip"
+                    android:text="银行系统升级维护公告"
+                    android:textColor="@color/home_ad"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dip"
+                        android:gravity="center_vertical"
+                        android:text="更多"
+                        android:textColor="@color/nomal_text"
+                        android:textSize="14sp" />
+                    <ImageView
+                        android:layout_marginRight="15dip"
+                        android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                        android:src="@drawable/more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+             <!-- 公告,签到,客服-->
+             <LinearLayout
+                 android:layout_marginTop="1dip"
+                 android:background="@color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="80dip">
+                 <RadioGroup
+                     android:orientation="horizontal"
+                     android:layout_gravity="center_vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="75dip">
+                     <RadioButton
+
+                         android:layout_marginTop="5dip"
+                         android:drawableTop="@drawable/ggtz"
+                         android:button="@null"
+                         android:checked="true"
+                         android:textSize="@dimen/regist_nomal"
+                         android:textColor="@color/nomal_text"
+                         android:gravity="center"
+                         android:layout_width="0dp"
+                         android:text="公告"
+                         android:layout_weight="1"
+                         android:layout_height="match_parent" />
+                     <RadioButton
+
+                         android:layout_marginTop="5dip"
+                         android:drawableTop="@drawable/date"
+                         android:button="@null"
+                         android:checked="true"
+                         android:textSize="@dimen/regist_nomal"
+                         android:textColor="@color/nomal_text"
+                         android:gravity="center"
+                         android:layout_width="0dp"
+                         android:text="签到"
+                         android:layout_weight="1"
+                         android:layout_height="match_parent" />
+                     <RadioButton
+
+                         android:layout_marginTop="5dip"
+                         android:drawableTop="@drawable/kefu"
+                         android:button="@null"
+                         android:checked="true"
+                         android:textSize="@dimen/regist_nomal"
+                         android:textColor="@color/nomal_text"
+                         android:gravity="center"
+                         android:layout_width="0dp"
+                         android:text="客服"
+                         android:layout_weight="1"
+                         android:layout_height="match_parent" />
+                 </RadioGroup>
+             </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</layout>

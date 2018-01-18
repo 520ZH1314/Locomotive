@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:binding="http://schemas.android.com/apk/res-auto">
+<data>
+    <variable
+        name="bindbankViewModel"
+        type="ganjiang.moye.com.locomotive.viewmodel.activity.bindbank.BindBankViewModel">
+
+    </variable>
+</data>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ganjiang.moye.com.locomotive.ui.activity.bindbank.BindBankActivity">
+
+    <!--toobar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bind_bank_toobar"
+            android:layout_width="match_parent"
+            android:layout_height="43dip"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="银行卡"
+                android:textColor="@color/home_ad"
+                android:textSize="@dimen/home_more_text" />
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+
+        binding:isThrottleFirst="@{Boolean.TRUE}"
+        binding:onClickCommand="@{bindbankViewModel.bindBankClick}"
+        android:layout_marginTop="50dip"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center"
+            android:textColor="@color/nomal_text"
+            android:textSize="21sp"
+            android:text="添加银行卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

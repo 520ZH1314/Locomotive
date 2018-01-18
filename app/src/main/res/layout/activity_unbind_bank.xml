@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--解绑银行卡界面-->
+<layout>
+    <data>
+        <variable
+            name="unBindViewModel"
+            type="ganjiang.moye.com.locomotive.viewmodel.fragment.withdraw.UnbindBankViewModel"/>
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ganjiang.moye.com.locomotive.ui.activity.bindbank.UnbindBankActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/unbind_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="解绑银行卡"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+       android:layout_margin="10dip"
+        android:orientation="vertical"
+        android:background="@drawable/bgs"
+        android:layout_width="match_parent"
+        android:layout_height="200dip">
+        <!--用户头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dip"
+            android:src="@drawable/kefu"
+            android:layout_width="50dip"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#33FFFFFF"
+            android:layout_height="50dip" />
+        <TextView
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/login_btn_text"
+            android:text="中国农业银行"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/login_btn_text"
+            android:text="**** **** **** **** 785"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login"
+        android:shadowRadius="10"
+        android:text="解除绑定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_more_text" />
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+    <variable
+        name="adViewModel"
+        type="ganjiang.moye.com.locomotive.viewmodel.activity.home.ADDetailViewModel">
+        
+    </variable>
+</data>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ganjiang.moye.com.locomotive.ui.activity.home.ADDetailActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/ad_toobar"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="43dip">
+    <TextView
+        android:textColor="@color/home_ad"
+        android:text="公告"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>
+</LinearLayout>
+</layout>

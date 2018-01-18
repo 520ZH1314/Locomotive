@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <import type="ganjiang.moye.com.locomotive.viewmodel.mainViewModel"/>
+    <variable
+        name="mainActivity"
+        type="mainViewModel">
+        
+    </variable>
+</data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ganjiang.moye.com.locomotive.MainActivity">
+  <FrameLayout
+      android:id="@+id/mian_fragment"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      >
+  </FrameLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/mian_radiogruop"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="48dip">
+            <RadioButton
+                android:id="@+id/mian_home"
+                android:layout_marginTop="5dip"
+                android:drawableTop="@drawable/home_radio_button"
+                android:button="@null"
+                android:checked="true"
+                android:textColor="@color/text_color_radio_button"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="首页"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/mian_account"
+                android:layout_marginTop="5dip"
+                android:drawableTop="@drawable/accounting_radio_button"
+                android:button="@null"
+
+                android:textColor="@color/text_color_radio_button"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="记账"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/mian_rebate"
+                android:layout_marginTop="5dip"
+                android:drawableTop="@drawable/rebate_radio_button"
+                android:button="@null"
+
+                android:textColor="@color/text_color_radio_button"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="返利申报"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/mian_mine"
+                android:layout_marginTop="5dip"
+                android:drawableTop="@drawable/mine_radio_button"
+                android:button="@null"
+
+                android:textColor="@color/text_color_radio_button"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="我的"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

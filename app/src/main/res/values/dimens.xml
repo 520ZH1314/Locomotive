@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_ad_text">21sp</dimen>
+    <dimen name="home_more_text">18sp</dimen>
+    <dimen name="login_jingshi">18sp</dimen>
+    <dimen name="nomal">18sp</dimen>
+    <dimen name="login_bianhao">16sp</dimen>
+    <dimen name="regist_nomal">16sp</dimen>
+    <dimen name="regist_finish">24sp</dimen>
+</resources>

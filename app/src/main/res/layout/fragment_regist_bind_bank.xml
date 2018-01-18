@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <!-- 第一次引导图-->
+    <LinearLayout
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="15dip"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/xinxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center"
+                android:textSize="@dimen/regist_nomal"
+                android:textColor="@color/regist_radio_button_text_pressed"
+                android:text="信息填写"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="10dip"
+            android:layout_gravity="center"
+            android:background="@color/regist_divider"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="1dip">
+
+        </View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/sfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center"
+                android:textSize="@dimen/regist_nomal"
+                android:textColor="@color/regist_radio_button_text_pressed"
+                android:text="绑定提现"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="10dip"
+            android:layout_gravity="center"
+            android:background="@color/regist_divider"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="1dip">
+
+        </View>
+        <LinearLayout
+            android:layout_marginRight="15dip"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/fds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center"
+                android:textSize="@dimen/regist_nomal"
+                android:textColor="@color/nomal_text"
+                android:text="注册完成"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--注册表单-->
+    <LinearLayout
+        android:layout_marginTop="30dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--姓名-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/as" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="text"
+                android:maxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="您的姓名" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+            android:background="@color/login_xian"
+            />
+
+        <!--身份证号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/fsa" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="phone|number"
+                android:maxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="请输入身份证号" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+            android:background="@color/login_xian"
+            />
+        <!--银行卡号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/gfs" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberPassword"
+                android:maxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="请输入银行卡号" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+            android:background="@color/login_xian"
+            />
+        <!--预留手机号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/fsa" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="phone|number"
+                android:maxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="请输入预留手机号" />
+        </LinearLayout>
+        <!--手机验证码-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+            android:background="@color/login_xian"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/gfs" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="phone|number"
+                android:maxLength="11"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="手机验证码" />
+            <Button
+                android:layout_marginLeft="10dip"
+                android:padding="5dip"
+                android:layout_gravity="center"
+                android:background="@drawable/login"
+                android:text="发送验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/nomal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+            android:background="@color/login_xian"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <!-- 下一步按钮-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login"
+        android:shadowRadius="10"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_more_text" />
+    <LinearLayout
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/nomal"
+            android:textColor="@color/nomal_text"
+            android:text="已有账号?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/nomal"
+            android:textColor="@color/login_jingshi"
+            android:text="点此登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--编号-->
+    <LinearLayout
+        android:layout_marginTop="20dip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:text="粤ICP备12345678号-1 ICP"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="经营许可证编号:粤B2-12345678"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+

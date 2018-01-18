@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ganjiang.moye.com.locomotive.ui.activity.login.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="登录"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="94.5dp"
+        android:src="@drawable/logo" />
+    <!--手机号登录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="请输入手机号" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+            android:background="@color/login_xian"
+            />
+
+
+    </LinearLayout>
+    <!--密码登录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.5dp"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:background="@null"
+                android:hint="请输入密码" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="-10dip"
+
+            />
+
+
+    </LinearLayout>
+    <!--错误提示-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="67.5dip"
+            android:src="@drawable/jingshi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dip"
+            android:text="手机号或密码输入不正确"
+            android:textColor="@color/login_jingshi"
+            android:textSize="@dimen/login_jingshi" />
+    </LinearLayout>
+    <!--button-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="60.25dip"
+        android:background="@drawable/login"
+        android:shadowRadius="10"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_more_text" />
+    <!--修改密码和去注册-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip">
+
+        <ImageView
+            android:id="@+id/login_find_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:src="@drawable/find" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/login_find_psw"
+            android:text="找回密码"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/nomal" />
+
+        <TextView
+            android:id="@+id/login_go_to_regist"
+            android:layout_marginRight="60dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="立即注册"
+            android:textColor="@color/login_go_regist"
+            android:textSize="@dimen/nomal" />
+        <ImageView
+            android:layout_marginRight="12dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/login_go_to_regist"
+            android:src="@drawable/zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!-- 编号-->
+    <LinearLayout
+        android:layout_marginTop="40dip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:text="粤ICP备12345678号-1 ICP"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="经营许可证编号:粤B2-12345678"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>
