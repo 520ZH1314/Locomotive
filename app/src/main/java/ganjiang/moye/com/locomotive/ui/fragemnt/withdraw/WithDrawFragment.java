@@ -14,6 +14,9 @@ import me.goldze.mvvmhabit.base.BaseFragment;
  */
 
 public class WithDrawFragment extends BaseFragment<FragmentWithDrawBinding,FragmentWithDrawViewModel> {
+
+
+
     @Override
     public int initContentView() {
         return R.layout.fragment_with_draw;

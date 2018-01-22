@@ -65,7 +65,7 @@ public class WithDrawActivity extends MyBaseActivity<ActivityWithDrawBinding,Wit
 
     @Override
     public WithDrawViewModel initViewModel() {
-        return new WithDrawViewModel();
+        return new WithDrawViewModel(this);
     }
 
     @Override

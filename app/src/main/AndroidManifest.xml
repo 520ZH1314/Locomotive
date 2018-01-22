@@ -45,9 +45,8 @@
         <activity
             android:name=".ui.activity.WithDraw.WithDrawActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".ui.activity.bindbank.UnbindBankActivity" />
-        <activity android:name=".ui.activity.me.InvestmentActivity" />
-        <activity android:name=".ui.activity.me.InvestmentMoreActivity"></activity>
+        <activity android:name=".ui.activity.bindbank.UnbindBankActivity" android:launchMode="singleTop" />
+        <activity android:name=".ui.activity.me.InvestmentActivity" android:launchMode="singleTop" />
     </application>
 
 </manifest>

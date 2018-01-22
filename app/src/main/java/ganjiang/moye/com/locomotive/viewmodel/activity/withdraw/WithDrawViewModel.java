@@ -1,6 +1,7 @@
 package ganjiang.moye.com.locomotive.viewmodel.activity.withdraw;
 
 import ganjiang.moye.com.locomotive.base.MyBaseViewModel;
+import ganjiang.moye.com.locomotive.ui.activity.WithDraw.WithDrawActivity;
 
 /**
  * 项目名称:Locomotive
@@ -9,4 +10,7 @@ import ganjiang.moye.com.locomotive.base.MyBaseViewModel;
  */
 
 public class WithDrawViewModel extends MyBaseViewModel {
+    public WithDrawViewModel(WithDrawActivity withDrawActivity) {
+        super(withDrawActivity);
+    }
 }

@@ -14,6 +14,8 @@ import me.goldze.mvvmhabit.base.BaseFragment;
  */
 
 public class TouZiShenBaoFragment extends BaseFragment<FragmentTouzishenbaoBinding,TouZiHShenBaoViewModel> {
+
+
     @Override
     public int initContentView() {
         return R.layout.fragment_touzishenbao;

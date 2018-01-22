@@ -11,7 +11,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import ganjiang.moye.com.locomotive.databinding.ActivityMainBinding;
-import ganjiang.moye.com.locomotive.ui.fragemnt.account.AccountFragment;
 import ganjiang.moye.com.locomotive.ui.fragemnt.home.HomeFragment;
 import ganjiang.moye.com.locomotive.ui.fragemnt.mine.MineFragment;
 import ganjiang.moye.com.locomotive.ui.fragemnt.rebate.RebateFragment;
@@ -23,11 +22,11 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, mainViewMode
     private FrameLayout containFrame;
     private Fragment mFragment;//当前显示的 fragment
     private HomeFragment homefragment;
-    private AccountFragment accountFragment;
+
     private MineFragment mineFragment;
     private RebateFragment rebateFragment;
     private RadioButton mianHome;
-    private RadioButton mianAccount;
+
     private RadioButton mianRebate;
     private RadioButton mianMine;
     private RadioGroup mianRadiogruop;
@@ -66,18 +65,17 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, mainViewMode
     private void initView() {
         containFrame = binding.mianFragment;
         mianHome = binding.mianHome;
-        mianAccount = binding.mianAccount;
+
         mianRebate = binding.mianRebate;
         mianMine = binding.mianMine;
         mianRadiogruop = binding.mianRadiogruop;
 
         homefragment = new HomeFragment();//首页
-        accountFragment = new AccountFragment();//记账
+
         mineFragment = new MineFragment();//我的
         rebateFragment = new RebateFragment();//返利申报
         mFragments = new Fragment[]{homefragment,
-                accountFragment,
-                rebateFragment, mineFragment};
+                rebateFragment,mineFragment};
 
 
         //开启事务
@@ -137,14 +135,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, mainViewMode
             case R.id.mian_home:
                 setIndexSelected(0);
                 break;
-            case R.id.mian_account:
+
+            case R.id.mian_rebate:
                 setIndexSelected(1);
                 break;
-            case R.id.mian_rebate:
-                setIndexSelected(2);
-                break;
             case R.id.mian_mine:
-                setIndexSelected(3);
+                setIndexSelected(2);
                 break;
         }
 

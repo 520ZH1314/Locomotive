@@ -14,8 +14,8 @@ public class UnbindBankActivity extends MyBaseActivity<ActivityUnbindBankBinding
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         Toolbar unbindToobar = binding.unbindToobar;
-         setToolBar(unbindToobar,"");
+        Toolbar unbindToobar = binding.unbindToobar;
+        setToolBar(unbindToobar,"");
     }
 
     @Override
@@ -30,7 +30,7 @@ public class UnbindBankActivity extends MyBaseActivity<ActivityUnbindBankBinding
 
     @Override
     public UnbindBankViewModel initViewModel() {
-        return null;
+        return new UnbindBankViewModel();
     }
 
     @Override

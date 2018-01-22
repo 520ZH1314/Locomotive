@@ -93,30 +93,33 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
-            android:textColor="@color/login_btn_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center"
-            android:textSize="20sp"
             android:text="已返利标(笔)"
-            android:layout_weight="1"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content" />
-        <TextView
             android:textColor="@color/login_btn_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center"
-            android:textSize="20sp"
             android:text="冻结中标(笔)"
-            android:layout_weight="1"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content" />
-        <TextView
             android:textColor="@color/login_btn_text"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:text="冻结金额(元)"
-            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <TextView
             android:layout_width="0dip"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="冻结金额(元)"
+            android:textColor="@color/login_btn_text"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </LinearLayout>
