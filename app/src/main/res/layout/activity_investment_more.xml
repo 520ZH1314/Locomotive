@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-   <data>
-       <variable
-           name="withdraweViewModel"
-           type="ganjiang.moye.com.locomotive.viewmodel.activity.withdraw.WithDrawViewModel"/>
-   </data>
-
-<LinearLayout
+  <data>
+      <variable
+          name="InvestMentMore"
+          type="ganjiang.moye.com.locomotive.viewmodel.activity.me.InvestMentMoreViewModel"/>
+  </data>
+<!--投资申报的界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ganjiang.moye.com.locomotive.ui.activity.WithDraw.WithDrawActivity">
+    tools:context="ganjiang.moye.com.locomotive.ui.activity.me.InvestmentMoreActivity">
+    <!--toobar-->
     <!--toobar-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.Toolbar
-            android:id="@+id/with_draw_toolbar"
+            android:id="@+id/investment_more_toolbar"
             android:layout_width="match_parent"
             android:layout_height="43dip"
             android:background="@color/white">
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text=" 提现"
+                android:text=" 投资申报"
                 android:textColor="@color/home_ad"
                 android:textSize="@dimen/home_more_text" />
         </android.support.v7.widget.Toolbar>
@@ -36,12 +36,12 @@
         app:tabIndicatorColor="@color/radio_button_text_pressed"
         android:layout_marginTop="2dip"
         app:tabSelectedTextColor="@color/radio_button_text_pressed"
-        android:id="@+id/with_tablayout"
+        android:id="@+id/investment_more_tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/with_viewpager"
+        android:id="@+id/investment_more_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">

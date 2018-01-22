@@ -1,7 +1,9 @@
-package ganjiang.moye.com.locomotive.viewmodel.fragment;
+package ganjiang.moye.com.locomotive.viewmodel.fragment.mine;
 
 import android.content.Context;
 
+import ganjiang.moye.com.locomotive.ui.activity.me.InvestmentActivity;
+import ganjiang.moye.com.locomotive.ui.activity.me.InvestmentMoreActivity;
 import ganjiang.moye.com.locomotive.ui.fragemnt.mine.MineFragment;
 import ganjiang.moye.com.locomotive.view.CustomDialog;
 import me.goldze.mvvmhabit.base.BaseViewModel;
@@ -21,6 +23,7 @@ public class mineViewModel extends BaseViewModel{
     private  MineFragment mineFragment;
 
     public mineViewModel(MineFragment mineFragment) {
+        super(mineFragment);
           this.mineFragment=mineFragment;
     }
 
@@ -39,4 +42,22 @@ public class mineViewModel extends BaseViewModel{
 
         }
     });
+
+
+    //投资的点击事件
+    public BindingCommand InvestmentClick = new BindingCommand(new Action0() {
+        @Override
+        public void call() {
+           startActivity(InvestmentActivity.class);
+        }
+    });
+
+    //投资申报的点击事件
+    public BindingCommand InvestmentMoreClick = new BindingCommand(new Action0() {
+
+        public void call() {
+            startActivity(InvestmentMoreActivity.class);
+        }
+    });
+
 }

@@ -23,7 +23,7 @@ public class FragmentWithDrawViewModel extends MyBaseViewModel {
 
    public BindingCommand UnbindBankClick =new BindingCommand(() ->
 
-      startActivity(UnbindBankActivity.class)
+            startActivity(UnbindBankActivity.class)
 
    );
 

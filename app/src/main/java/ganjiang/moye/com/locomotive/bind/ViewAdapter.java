@@ -27,12 +27,14 @@ public final class ViewAdapter {
     private static List<String> titles = new ArrayList<>();
     private static List<String> images = new ArrayList();
 
+
+    // bannerurl
     @BindingAdapter(value = {"bannerurl"}, requireAll = false)
-    public static void setImageUri(final Banner mBanner, final List <IKeyAndValue> bannerurl) {
+    public static void setImageUri(final Banner mBanner, final List<IKeyAndValue> bannerurl) {
 
 
         if (bannerurl != null && !bannerurl.isEmpty()) {
-            if(images.size()>=4&&titles.size()>=4){
+            if (images.size() >= 4 && titles.size() >= 4) {
                 images.clear();
                 titles.clear();
             }
@@ -59,4 +61,8 @@ public final class ViewAdapter {
 
         }
     }
+
+
+
+
 }

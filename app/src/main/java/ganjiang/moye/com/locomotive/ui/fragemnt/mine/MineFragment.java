@@ -3,7 +3,7 @@ package ganjiang.moye.com.locomotive.ui.fragemnt.mine;
 import ganjiang.moye.com.locomotive.BR;
 import ganjiang.moye.com.locomotive.R;
 import ganjiang.moye.com.locomotive.databinding.MineFragmentBinding;
-import ganjiang.moye.com.locomotive.viewmodel.fragment.mineViewModel;
+import ganjiang.moye.com.locomotive.viewmodel.fragment.mine.mineViewModel;
 import me.goldze.mvvmhabit.base.BaseFragment;
 
 /**

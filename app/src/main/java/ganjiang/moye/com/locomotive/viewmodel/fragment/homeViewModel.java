@@ -113,7 +113,6 @@ public class homeViewModel extends MyBaseViewModel {
     //银行系统升级维护按钮的点击事件
     public BindingCommand HomeADClick = new BindingCommand(() -> startActivity( ADDetailActivity.class));
 
-
     }
 
 

@@ -1,9 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout>
+   <data>
+       <variable
+           name="investment"
+           type="ganjiang.moye.com.locomotive.viewmodel.activity.me.InvestMentViewModel"/>
+   </data>
+<!--投资界面-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ganjiang.moye.com.locomotive.ui.activity.me.InvestmentActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <!--toobar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/investment_toolbar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="43dip"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" 投资"
+                android:textColor="@color/home_ad"
+                android:textSize="@dimen/home_more_text" />
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+   <!-- 头部-->
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="200dip">
+   <TextView
+       android:textColor="@color/login_btn_text"
+       android:layout_gravity="center"
+       android:textSize="22sp"
+       android:text="100.00"
+       android:layout_marginTop="30dip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/login_btn_text"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:text="累计收益(元)"
+        android:layout_marginTop="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--权比-->
+    <LinearLayout
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/login_btn_text"
+             android:gravity="center"
+            android:textSize="22sp"
+            android:text="0"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/login_btn_text"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="0"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/login_btn_text"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="0"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--权比-->
+    <LinearLayout
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/login_btn_text"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="已返利标(笔)"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/login_btn_text"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="冻结中标(笔)"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/login_btn_text"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="冻结金额(元)"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+  <!--中间标题-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dip">
+    <TextView
+        android:layout_marginLeft="5dip"
+         android:layout_marginTop="18dp"
+        android:textColor="@color/nomal_text"
+        android:layout_alignParentLeft="true"
+        android:text="日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/nomal_text"
+        android:layout_alignParentRight="true"
+        android:text="收益"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    <!--数据-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+</layout>
