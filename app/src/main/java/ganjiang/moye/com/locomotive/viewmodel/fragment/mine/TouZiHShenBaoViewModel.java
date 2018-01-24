@@ -24,10 +24,25 @@ import me.goldze.mvvmhabit.binding.command.BindingCommand;
  */
 
 public class TouZiHShenBaoViewModel extends MyBaseViewModel {
+    //投资平台名的绑定
+    public ObservableField<String>  TouZIName = new ObservableField<>("");
+    //平台用户名
+    public ObservableField<String> Usename = new ObservableField<>("");
+
+    //平台用户手机号的绑定
+    public ObservableField<String> phoneNum = new ObservableField<>("");
+
+    //标的名称绑定
+    public ObservableField<String> biaoName = new ObservableField<>("");
+
+
+    //投资金额的绑定
+    public ObservableField<String> money = new ObservableField<>("");
+
+
 
     private TouZiShenBaoFragment touZiShenBaoFragment;
     //用户名的绑定
-
     public ObservableField<String> time = new ObservableField<>("");
 
     private TimePickerView pvTime;
@@ -43,12 +58,10 @@ public class TouZiHShenBaoViewModel extends MyBaseViewModel {
 
     private void requesstNet() {
 
-       data1=new ArrayList<>();
-         data1.clear();
-         data1.add("聚车金融");
-         data1.add("聚我金融");
-         data1.add("聚你金融");
+        for (int i = 0; i <5 ; i++) {
 
+            data1.add("聚车金融"+i);
+        }
 
     }
 
@@ -103,4 +116,14 @@ public class TouZiHShenBaoViewModel extends MyBaseViewModel {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         return format.format(date);
     }
+
+
+  //提交的点击事件
+    public BindingCommand BtnGoClick=new BindingCommand(() -> {
+
+
+    });
+
+
+
 }

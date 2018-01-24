@@ -37,6 +37,7 @@ android {
 
 
 dependencies {
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
     compile 'com.github.arcadefire:nice-spinner:1.3.1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.github.goldze:MVVMHabit:1.2.5.3'
@@ -48,6 +49,9 @@ dependencies {
     //RxJava2 Adapter
     compile 'com.youth.banner:banner:1.4.9'
     //最新版本
+    //noinspection GradleCompatible
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     //noinspection GradleCompatible
     compile 'com.android.support:appcompat-v7:27.0.2'
     compile 'io.reactivex.rxjava2:rxjava:2.0.1'

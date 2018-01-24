@@ -28,9 +28,9 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dip"
                 android:layout_weight="1"
-                android:text="投资平台"
+                android:text="投资的平台"
                 android:textColor="@color/regist_radio_button_text_pressed"
-                android:textSize="@dimen/nomal" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="0dip"
@@ -41,6 +41,7 @@
                 android:background="@drawable/linerlayout_underline">
 
                 <org.angmarch.views.NiceSpinner
+                    android:text="@={TouZiView.TouZIName}"
                     android:textSize="18sp"
                     android:id="@+id/nice_spinner"
                     spinnerData="@{TouZiView.data1}"
@@ -67,6 +68,7 @@
                 android:textSize="@dimen/regist_nomal" />
 
             <EditText
+                android:text="@={TouZiView.Usename}"
                 android:maxLength="11"
                 android:gravity="center"
                 android:layout_width="0dip"
@@ -96,6 +98,7 @@
                 android:textSize="@dimen/regist_nomal" />
 
             <EditText
+                android:text="@={TouZiView.phoneNum}"
                 android:gravity="center"
                 android:layout_width="0dip"
                 android:layout_height="45dip"
@@ -122,7 +125,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dip"
                 android:layout_weight="1"
-                android:text="标的名称"
+                android:text="投标的名称"
                 android:textColor="@color/regist_radio_button_text_pressed"
                 android:textSize="@dimen/regist_nomal" />
 
@@ -135,6 +138,7 @@
                 android:background="@drawable/linerlayout_underline">
 
                 <org.angmarch.views.NiceSpinner
+                    android:text="@={TouZiView.biaoName}"
                     android:textSize="18sp"
                     android:textAlignment="center"
                     spinnerData="@{TouZiView.data1}"
@@ -156,7 +160,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dip"
                 android:layout_weight="1"
-                android:text="投资金额"
+                android:text="投资的金额"
                 android:textColor="@color/regist_radio_button_text_pressed"
                 android:textSize="@dimen/regist_nomal" />
 
@@ -170,6 +174,9 @@
                 android:orientation="horizontal">
 
                 <EditText
+                 android:text="@={TouZiView.money}"
+                    android:maxLines="1"
+                    android:padding="5dip"
                     android:layout_width="0dip"
                     android:layout_height="45dip"
                     android:layout_weight="9"
@@ -203,7 +210,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dip"
                 android:layout_weight="1"
-                android:text="投表时间"
+                android:text="投表的时间"
                 android:textColor="@color/regist_radio_button_text_pressed"
                 android:textSize="@dimen/regist_nomal" />
 
@@ -217,6 +224,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+
                     android:layout_width="0dip"
                     android:layout_height="45dip"
                     android:layout_weight="9"
@@ -227,6 +235,7 @@
                     android:textSize="@dimen/regist_nomal" />
 
                 <ImageView
+
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -239,6 +248,8 @@
         </LinearLayout>
 
         <Button
+            app:isThrottleFirst="@{Boolean.TRUE}"
+            app:onClickCommand="@{TouZiView.BtnGoClick}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="17dip"

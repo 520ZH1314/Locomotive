@@ -1,14 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
+
         <variable
             name="ShenBaoView"
-            type="ganjiang.moye.com.locomotive.viewmodel.fragment.mine.ShenBaoViewModel"/>
+            type="ganjiang.moye.com.locomotive.viewmodel.fragment.mine.ShenBaoViewModel" />
     </data>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical">
+        <!--筛选导航-->
+        <LinearLayout
 
-</LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--筛选-->
+            <LinearLayout
+                android:id="@+id/check_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="@={ShenBaoView.Checked1}"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/seletor_stock_arrow"
+                    android:gravity="center"
+                    android:text="收益类型"
+                    android:textColor="@drawable/selector_text_stock"
+                    android:textSize="15sp"
+                    app:onClickCommand="@{ShenBaoView.Check1Click}" />
+            </LinearLayout>
+            <!--筛选-->
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="@={ShenBaoView.Checked2}"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/seletor_stock_arrow"
+                    android:gravity="center"
+                    android:text="交易平台"
+                    android:textColor="@drawable/selector_text_stock"
+                    android:textSize="15sp"
+                    app:onClickCommand="@{ShenBaoView.Check2Click}" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
 </layout>
