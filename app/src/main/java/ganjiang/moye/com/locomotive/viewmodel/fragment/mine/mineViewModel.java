@@ -3,6 +3,7 @@ package ganjiang.moye.com.locomotive.viewmodel.fragment.mine;
 import android.content.Context;
 
 import ganjiang.moye.com.locomotive.ui.activity.me.InvestmentActivity;
+import ganjiang.moye.com.locomotive.ui.activity.me.MyCenterActivity;
 import ganjiang.moye.com.locomotive.ui.fragemnt.mine.MineFragment;
 import ganjiang.moye.com.locomotive.view.CustomDialog;
 import me.goldze.mvvmhabit.base.BaseViewModel;
@@ -50,7 +51,13 @@ public class mineViewModel extends BaseViewModel{
            startActivity(InvestmentActivity.class);
         }
     });
-
+    //个人中心的点击事件
+    public BindingCommand MyCenterClick = new BindingCommand(new Action0() {
+        @Override
+        public void call() {
+            startActivity(MyCenterActivity.class);
+        }
+    });
 
 
 }

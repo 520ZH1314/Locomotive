@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+   <data>
+       <variable
+           name="MyCenter"
+           type="ganjiang.moye.com.locomotive.viewmodel.activity.me.MyCenterViewModel"/>
+   </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ganjiang.moye.com.locomotive.ui.activity.me.MyCenterActivity">
+    <!--toobar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_center"
+            android:layout_width="match_parent"
+            android:layout_height="43dip"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="个人中心"
+                android:textColor="@color/home_ad"
+                android:textSize="@dimen/home_more_text" />
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+    <!--用户名-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv"
+            android:text="用户名"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="姓名"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:background="@color/nomal_text" />
+    </RelativeLayout>
+    <!--实名认证-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/greed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv_sm"
+            android:text="实名认证"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="已认证"
+            android:textColor="@color/login_jingshi"
+            android:textSize="@dimen/login_bianhao" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:background="@color/nomal_text" />
+    </RelativeLayout>
+    <!--手机号码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv_num"
+            android:text="手机号码"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="13576073491"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:background="@color/nomal_text" />
+    </RelativeLayout>
+    <!--银行卡-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv_bank"
+            android:text="银行卡"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            app:onClickCommand="@{MyCenter.AddBankClick}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="添加"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:background="@color/nomal_text" />
+    </RelativeLayout>
+    <!--登录密码修改-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/hot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv_login_pwd"
+            android:text="登录密码修改"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            app:onClickCommand="@{MyCenter.ModifyPhoneClick}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="修改"
+            android:textColor="@color/nomal_text"
+            android:textSize="@dimen/login_bianhao" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:background="@color/nomal_text" />
+    </RelativeLayout>
+    <!--交易密码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv_jiaoyi_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/guss" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv_jiaoyi_pwd"
+            android:text="交易密码"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="未设置"
+            android:textColor="@color/login_jingshi"
+            android:textSize="@dimen/login_bianhao" />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:background="@color/nomal_text" />
+    </RelativeLayout>
+    <!--绑定邮箱-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/my_center_iv_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_center_iv_mail"
+            android:text="绑定邮箱"
+            android:textColor="@color/home_ad"
+            android:textSize="@dimen/home_more_text" />
+
+        <TextView
+            app:onClickCommand="@{MyCenter.BindMailClick}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="未设置"
+            android:textColor="@color/login_jingshi"
+            android:textSize="@dimen/login_bianhao" />
+
+    </RelativeLayout>
+</LinearLayout>
+</layout>

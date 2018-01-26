@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
-
+    >
 
     <!-- 第一次引导图-->
     <LinearLayout
@@ -112,6 +111,7 @@
                 android:src="@drawable/as" />
 
             <EditText
+
                 android:maxLines="1"
                 android:inputType="text"
                 android:maxLength="11"
@@ -335,4 +335,3 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>
-

@@ -52,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+                app:onClickCommand="@{mineModel.MyCenterClick}"
                 android:id="@+id/me_num"
                 android:layout_marginRight="5dip"
                android:layout_centerInParent="true"

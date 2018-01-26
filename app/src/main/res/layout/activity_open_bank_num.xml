@@ -58,11 +58,12 @@
                 android:textSize="@dimen/nomal" />
 
             <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
                 android:maxLines="1"
                 android:inputType="text"
                 android:maxLength="11"
                 android:layout_width="match_parent"
-                android:layout_height="30dip"
+                android:layout_height="40dip"
                 android:layout_gravity="center"
                 android:layout_marginLeft="18dip"
                 android:background="@null"
@@ -96,11 +97,12 @@
                 />
 
             <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
                 android:maxLines="1"
                 android:inputType="phone|number"
                 android:maxLength="11"
                 android:layout_width="match_parent"
-                android:layout_height="30dip"
+                android:layout_height="40dip"
                 android:layout_gravity="center"
                 android:layout_marginLeft="18dip"
                 android:background="@null"
@@ -132,11 +134,12 @@
                 android:layout_marginLeft="22.5dp"
                 />
             <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
                 android:maxLines="1"
                 android:inputType="numberPassword"
                 android:maxLength="11"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dip"
                 android:layout_gravity="center"
                 android:layout_marginLeft="18dip"
                 android:background="@null"
@@ -207,11 +210,12 @@
                 android:textSize="@dimen/nomal" />
 
             <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
                 android:maxLines="1"
                 android:inputType="phone|number"
                 android:maxLength="11"
                 android:layout_width="match_parent"
-                android:layout_height="30dip"
+                android:layout_height="40dip"
                 android:layout_gravity="center"
                 android:layout_marginLeft="18dip"
                 android:background="@null"
@@ -233,6 +237,7 @@
             android:orientation="horizontal">
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="30dip"
                 android:layout_gravity="center"
@@ -241,11 +246,13 @@
                 android:textColor="@color/regist_radio_button_text_pressed"
                 android:textSize="@dimen/nomal" />
             <EditText
+
+                android:textCursorDrawable="@drawable/edit_cursor_color"
                 android:maxLines="1"
                 android:inputType="phone|number"
                 android:maxLength="11"
-                android:layout_width="220dip"
-                android:layout_height="wrap_content"
+                android:layout_width="180dip"
+                android:layout_height="40dip"
                 android:layout_gravity="center"
                 android:layout_marginLeft="18dip"
                 android:background="@null"

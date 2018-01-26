@@ -68,6 +68,7 @@
                 android:textSize="@dimen/regist_nomal" />
 
             <EditText
+                
                 android:text="@={TouZiView.Usename}"
                 android:maxLength="11"
                 android:gravity="center"
