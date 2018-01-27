@@ -1,10 +1,285 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--平台列表-->
-<android.support.constraint.ConstraintLayout
-    android:background="@color/white"
-    android:layout_margin="10dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--平台列表-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--上半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/huiyinglogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="汇盈金服"
+                android:textColor="@color/home_ad"
+                android:textSize="20sp" />
+
+            <ganjiang.moye.com.locomotive.view.LabelText
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                app:labelText="民营系"
+                app:labelTextBorder="1"
+                app:labelTextBorderRound="8"
+                app:labelTextColor="@color/login_go_regist"
+                app:labelTextSize="14sp"
+                app:labelTextStrokeColor="@color/login_go_regist" />
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="120dip"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mkm">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:padding="5dp"
+                android:text="首投＋复投"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/nomal_text" />
+
+    </RelativeLayout>
+    <!--中间部分-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:orientation="horizontal">
+        <!--综合年化-->
+        <RelativeLayout
+
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="15"
+                    android:textColor="#ff8200"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="%"
+                    android:textColor="#ff8200"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dip"
+                android:text="最高综合年化"
+                android:textColor="@color/nomal_text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip"
+                android:background="@color/nomal_text" />
+        </RelativeLayout>
+        <!--投资金额-->
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="1000-50000元"
+                android:textColor="@color/home_ad"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dip"
+                android:text="投资金额"
+                android:textColor="@color/nomal_text"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+        <!--总收益-->
+        <RelativeLayout
+
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_weight="1">
+
+            <View
+
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip"
+                android:background="@color/nomal_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="88-240元"
+                android:textColor="@color/home_ad"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dip"
+                android:text="综合总收益"
+                android:textColor="@color/nomal_text"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:background="@color/nomal_text" />
+    <!--下半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal">
+            <ganjiang.moye.com.locomotive.view.LabelText
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+
+                android:padding="5dp"
+                app:labelText="注册资金1000亿"
+                app:labelTextBorder="1"
+                app:labelTextBorderRound="8"
+                app:labelTextColor="@color/moremoney"
+                app:labelTextSize="14sp"
+                app:labelTextStrokeColor="@color/moremoney" />
+            <ganjiang.moye.com.locomotive.view.LabelText
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                app:labelText="B轮融资1亿"
+                app:labelTextBorder="1"
+                app:labelTextBorderRound="8"
+                app:labelTextColor="@color/bcompany"
+                app:labelTextSize="14sp"
+                app:labelTextStrokeColor="@color/bcompany" />
+            <ganjiang.moye.com.locomotive.view.LabelText
+                android:layout_marginLeft="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                app:labelText="A股上市公司"
+                app:labelTextBorder="1"
+                app:labelTextBorderRound="8"
+                app:labelTextColor="@color/acompany"
+                app:labelTextSize="14sp"
+                app:labelTextStrokeColor="@color/acompany" />
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           >
+
+            <Button
+                android:layout_marginLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/radio_button_text_pressed"
+                android:padding="5dip"
+                android:text="查看4款产品"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

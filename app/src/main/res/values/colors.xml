@@ -14,4 +14,7 @@
     <color name="regist_divider">#cccccc</color>
     <color name="withDrawBankNum">#1d66ea</color>
     <color name="withDrawBankText">#666666</color>
+    <color name="moremoney">#f96b72</color>
+    <color name="bcompany">#27a5f4</color>
+    <color name="acompany">#ffaa4d</color>
 </resources>

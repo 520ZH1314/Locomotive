@@ -17,6 +17,7 @@ import ganjiang.moye.com.locomotive.R;
  * Created by lovezh
  * CreatedData: on 2018/1/26.
  * 项目标签的textView
+ * 自定义 VIew
  */
 
 public class LabelText extends android.support.v7.widget.AppCompatTextView {
@@ -47,7 +48,7 @@ public class LabelText extends android.support.v7.widget.AppCompatTextView {
         labelTextColor = array.getColor(R.styleable.LabelText_labelTextColor, DEFULAT_COLOR);
         labelTextStrokeColor = array.getColor(R.styleable.LabelText_labelTextStrokeColor, DEFULAT_COLOR);
         labelTextBorder = array.getInt(R.styleable.LabelText_labelTextBorder, LABELTEXTBORDER);
-        labelTextSize = array.getInt(R.styleable.LabelText_labelTextSize, LABELTEXTSIZE);
+        labelTextSize = (int) array.getDimension(R.styleable.LabelText_labelTextSize, LABELTEXTSIZE);
         labelTextString=array.getString(R.styleable.LabelText_labelText);
         labelTextBorderRound=array.getInt(R.styleable.LabelText_labelTextBorderRound,LABELTEXTBORDERROUND);
         array.recycle();
@@ -126,8 +127,8 @@ public class LabelText extends android.support.v7.widget.AppCompatTextView {
         rect1.inset(2,2);
         canvas.drawRoundRect(rect1,labelTextBorderRound,labelTextBorderRound,paint);
 
-        //绘制文字
-        initPaint(labelTextColor);
+         //绘制文字
+         initPaint(labelTextColor);
          paint.setStyle(Paint.Style.FILL);
          Rect rect2=getTextRect();
          Paint.FontMetrics fontMetrics=paint.getFontMetrics();
@@ -136,4 +137,6 @@ public class LabelText extends android.support.v7.widget.AppCompatTextView {
          canvas.drawText(labelTextString,x, y,paint);
 
     }
+
+
 }
